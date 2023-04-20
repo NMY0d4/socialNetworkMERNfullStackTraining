@@ -8,7 +8,6 @@ import { CssBaseline } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import { themeSettings } from 'theme';
 import { ThemeProvider } from '@emotion/react';
-import Navbar from 'scenes/navbar';
 
 function App() {
   const mode = useSelector((state) => state.mode);
