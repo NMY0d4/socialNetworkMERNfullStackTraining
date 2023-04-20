@@ -125,7 +125,7 @@ const Form = () => {
             gap='30px'
             gridTemplateColumns='repeat(4, minmax(0,1fr))'
             sx={{
-              '&> div': { gridColumn: isNonMobile ? undefined : 'span 4' },
+              '& > div': { gridColumn: isNonMobile ? undefined : 'span 4' },
             }}
           >
             {isRegister && (
@@ -191,7 +191,7 @@ const Form = () => {
                       setFieldValue('picture', acceptedFiles[0])
                     }
                   >
-                    {({ getRootProps, getInputProps }) => {
+                    {({ getRootProps, getInputProps }) => (
                       <Box
                         {...getRootProps()}
                         border={`2px dashed ${palette.primary.main}`}
@@ -207,8 +207,8 @@ const Form = () => {
                             <EditOutlinedIcon />
                           </FlexBetween>
                         )}
-                      </Box>;
-                    }}
+                      </Box>
+                    )}
                   </Dropzone>
                 </Box>
               </>
