@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Fragment, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setPosts } from 'state';
 import PostWidget from './PostWidget';
@@ -38,7 +38,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <>
+    <div width='100%'>
       {posts.map(
         ({
           _id,
@@ -66,7 +66,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
           />
         )
       )}
-    </>
+    </div>
   );
 };
 

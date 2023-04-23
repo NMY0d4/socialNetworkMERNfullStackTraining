@@ -6,7 +6,7 @@ import MyPostWidget from 'scenes/widgets/MyPostWidget';
 import PostsWidget from 'scenes/widgets/PostsWidget';
 
 function HomePage() {
-  const isNonMobileScreens = useMediaQuery('(min-width: 1020px)');
+  const isNonMobileScreens = useMediaQuery('(min-width:1020px)');
   const { _id, picturePath } = useSelector((state) => state.user);
   return (
     <Box>
